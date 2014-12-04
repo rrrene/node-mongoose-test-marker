@@ -30,9 +30,7 @@
     "eslint": "^0.10.0",
     "istanbul": "^0.3.4",
     "mocha": "^2.0.1",
-    "mocha-lcov-reporter": "0.0.1"
-  },
-  "dependencies": {
+    "mocha-lcov-reporter": "0.0.1",
     "mongoose": "^3.8.20"
   }
 }
