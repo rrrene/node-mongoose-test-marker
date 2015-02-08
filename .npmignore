@@ -1,3 +1,5 @@
 .travis.yml
 test
+test-util
 node_modules
+coverage
