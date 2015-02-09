@@ -2,8 +2,12 @@
   env:
     # Adds all of the Mocha testing global variables
     mocha: true
+    node: true
 
   rules:
+
+    global:
+      Promise: true
 
     # Allow `(function() { fn(); }).should.throw();`
     no-wrap-func: 0

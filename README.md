@@ -7,14 +7,10 @@
 
 
 ## Introduction
+This module will help you keep track of documents created during tests in your project.
 
 
 
-## Usage
-
-```javascript
-
-```
 
 
 ## Running Tests

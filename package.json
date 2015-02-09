@@ -1,11 +1,11 @@
 {
   "name": "mongoose-test-marker",
   "version": "1.0.0",
-  "description": "A Mongoose plugin for marking and cleaning up test records",
+  "description": "A Mongoose plugin for marking and cleaning up test documents",
   "main": "index.js",
   "private": false,
   "scripts": {
-    "test": "NODE_ENV=test istanbul cover --report teamcity --report lcov _mocha -- --ui bdd --check-leaks --recursive --slow 200 --reporter spec test",
+    "test": "NODE_ENV=test istanbul cover -x test-util/** --report teamcity --report lcov _mocha -- --ui bdd --check-leaks --recursive --slow 200 --reporter spec test",
     "coveralls": "NODE_ENV=test istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- --recursive -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage",
     "lint": "eslint ."
   },
@@ -25,12 +25,16 @@
     "url": "https://github.com/Springworks/node-mongoose-test-marker/issues"
   },
   "devDependencies": {
+    "bluebird": "^2.9.7",
     "chai": "^1.10.0",
     "coveralls": "^2.11.2",
-    "eslint": "^0.10.0",
-    "istanbul": "^0.3.4",
-    "mocha": "^2.0.1",
+    "eslint": "^0.14.1",
+    "istanbul": "^0.3.5",
+    "mocha": "^2.1.0",
     "mocha-lcov-reporter": "0.0.1",
-    "mongoose": "^3.8.20"
+    "mongoose": "^3.8.23"
+  },
+  "dependencies": {
+    "triejs": "^0.1.5"
   }
 }
