@@ -1,6 +1,10 @@
 language: node_js
+notifications:
+  email: false
+  slack:
+    secure: GIPfiyRaGXTYcVfI6yCh9lviFNUwKWgEW4sXp+HM4xlx/uISUOqMMeY8cotNCK7tC9HFfOw7OFf3D+Be8OuZElkNgOwF1VBwsjVp2PpzdjDg47kAobFTXJQP43B/89MKPxm/gmTkUSP/Yg9a9yR9u5Zga/xHor+YugTL8ZQ4JQI=
 node_js:
-  - "0.12"
+  - '0.12'
 services:
   - mongodb
 script:
