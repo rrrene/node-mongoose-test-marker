@@ -1,6 +1,6 @@
 {
   "name": "mongoose-test-marker",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Mongoose plugin for marking and cleaning up test documents",
   "main": "index.js",
   "private": false,
